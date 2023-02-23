@@ -37,14 +37,14 @@ function rgbToHex(r, g, b) {
 // Functin to generate a random value
 function getRandomGradient() {
     // Assigning and declaring respective RBG variable for both color inputs 
-    var r1 = getRandomInt();
-    var g1 = getRandomInt();
-    var b1 = getRandomInt();
-    var r2 = getRandomInt();
-    var g2 = getRandomInt();
-    var b2 = getRandomInt();
+    let r1 = getRandomInt();
+    let g1 = getRandomInt();
+    let b1 = getRandomInt();
+    let r2 = getRandomInt();
+    let g2 = getRandomInt();
+    let b2 = getRandomInt();
 
-    var randomGradient = "linear-gradient(to right, rgb(" + r1 + "," + g1 + "," + b1 + "),rgb(" + r2 + "," + g2 + "," + b2 + "))";
+    let randomGradient = "linear-gradient(to right, rgb(" + r1 + "," + g1 + "," + b1 + "),rgb(" + r2 + "," + g2 + "," + b2 + "))";
 
     body.style.background = randomGradient; //updates body background
     css.textContent = body.style.background; //Updates CSS linear gradient on page
